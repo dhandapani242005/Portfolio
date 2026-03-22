@@ -33,7 +33,7 @@ function Navbar({ activeSection, isSidebarOpen, onToggleSidebar, onNavSelect }) 
         <div className="nav-top">
           <a href="#home" className="brand" aria-label="Go to home section">
             <span className="brand-mark" aria-hidden="true">
-              <img src="/favicon.png" alt="Logo" style={{ width: '1.4rem', height: '1.4rem' }} />
+              <img src="/favicon.svg" alt="Logo" style={{ width: '1.4rem', height: '1.4rem' }} />
             </span>
             <span className="brand-label">DM | Portfolio</span>
           </a>

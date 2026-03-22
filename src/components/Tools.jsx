@@ -13,11 +13,14 @@ import {
   SiDavinciresolve,
   SiJest,
   SiCanva,
+  SiNodedotjs,
+  SiMongodb,
 } from 'react-icons/si';
 import { 
   FaChartSimple, FaCode, FaPalette,
   FaFigma, FaJira, FaGitlab, FaBootstrap, FaDocker, 
-  FaAws, FaMicrosoft, FaLeaf, FaKey, FaVideo, FaSwatchbook, FaPenNib
+  FaAws, FaMicrosoft, FaLeaf, FaKey, FaVideo, FaSwatchbook, FaPenNib,
+  FaBrain, FaNetworkWired
 } from 'react-icons/fa6';
 import {
   TbBrandAdobePhotoshop,
@@ -47,6 +50,10 @@ const predefinedTools = [
   { name: 'Jest', Icon: SiJest, color: '#C21325', category: 'code', description: 'Delightful JavaScript testing framework for ensuring codebase integrity.' },
   { name: 'Power BI', Icon: FaChartSimple, color: '#F2C811', category: 'code', description: 'Dashboarding and reporting tool for actionable data visualization.' },
   { name: 'Jira', Icon: FaJira, color: '#0052CC', category: 'code', description: 'Agile project management, sprint planning, and issue tracking.' },
+  { name: 'Node.js', Icon: SiNodedotjs, color: '#339933', category: 'code', description: 'Cross-platform, open-source JavaScript runtime environment for server-side development.' },
+  { name: 'AI', Icon: FaBrain, color: '#55c8f5', category: 'code', description: 'Integration of artificial intelligence and automated systems for intelligent software solutions.' },
+  { name: 'ML', Icon: FaNetworkWired, color: '#F7931E', category: 'code', description: 'Machine learning for predictive analysis, data modeling, and pattern recognition.' },
+  { name: 'NoSQL', Icon: SiMongodb, color: '#47A248', category: 'code', description: 'NoSQL database management using flexible document-based schemas for scalable data.' },
 
   // DESIGN TOOLS
   { name: 'Photoshop', Icon: TbBrandAdobePhotoshop, color: '#31A8FF', category: 'design', description: 'Raster image editing, photo manipulation, and digital art creation.' },
