@@ -1,0 +1,76 @@
+.timeline {
+  display: grid;
+  gap: 1.1rem;
+}
+
+.timeline-card {
+  background: linear-gradient(145deg, #ffffff, #f3faff);
+  border: 1px solid var(--line);
+  border-left: 3px solid #69cdf7;
+  border-radius: 0.95rem;
+  padding: 1.05rem 1.15rem;
+  transition: transform 230ms ease, box-shadow 230ms ease;
+}
+
+.timeline-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 16px 30px rgba(63, 128, 179, 0.16);
+}
+
+.timeline-card h3 {
+  margin-bottom: 0.28rem;
+  font-size: 1.22rem;
+}
+
+.timeline-card p {
+  color: var(--text-muted);
+  margin-bottom: 0.15rem;
+  font-size: 1rem;
+}
+
+.timeline-card span {
+  color: #2c7aa8;
+  font-size: 1rem;
+}
+
+.experience-summary {
+  margin-top: 0.45rem;
+  color: var(--text-muted);
+}
+
+.experience-points {
+  list-style: none;
+  margin-top: 0.55rem;
+  display: grid;
+  gap: 0.35rem;
+}
+
+.experience-points li {
+  color: var(--text-muted);
+  position: relative;
+  padding-left: 0.95rem;
+  font-size: 0.98rem;
+}
+
+.experience-points li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.52rem;
+  width: 0.38rem;
+  height: 0.38rem;
+  border-radius: 999px;
+  background: #63cdee;
+}
+
+[data-theme='dark'] .timeline-card {
+  background: var(--bg-surface);
+  border-color: var(--line);
+  border-left-color: var(--accent-2);
+}
+[data-theme='dark'] .timeline-card:hover {
+  box-shadow: var(--shadow);
+}
+[data-theme='dark'] .experience-points li::before {
+  background: var(--accent-2);
+}

@@ -1,0 +1,25 @@
+.app-shell {
+  min-height: 100vh;
+}
+
+.app-shell main,
+.app-shell > .footer {
+  transition: margin-left 220ms ease;
+}
+
+.app-shell.sidebar-open main,
+.app-shell.sidebar-open > .footer {
+  margin-left: 17.4rem;
+}
+
+.app-shell.sidebar-collapsed main,
+.app-shell.sidebar-collapsed > .footer {
+  margin-left: 6.55rem;
+}
+
+@media (max-width: 820px) {
+  .app-shell.sidebar-open main,
+  .app-shell.sidebar-open > .footer {
+    margin-left: 6.55rem;
+  }
+}

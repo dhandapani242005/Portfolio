@@ -1,0 +1,5 @@
+Dhandapani M Resume Placeholder
+
+This is a placeholder resume file.
+Replace this file with your real PDF resume and keep the same filename,
+or update the hero button link in src/components/Hero.jsx.

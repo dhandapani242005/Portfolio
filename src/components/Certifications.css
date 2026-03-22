@@ -1,0 +1,105 @@
+.cert-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2.2rem;
+  gap: 1.5rem;
+}
+
+.cert-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.65rem 1.4rem;
+  background: #0077B5; /* LinkedIn Blue */
+  color: #ffffff;
+  border-radius: 0.8rem;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: background 0.25s ease, transform 0.2s ease, box-shadow 0.25s ease;
+  box-shadow: 0 4px 15px rgba(0, 119, 181, 0.25);
+}
+
+.cert-btn:hover {
+  background: #006097;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 119, 181, 0.4);
+}
+
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.cert-card {
+  background: linear-gradient(145deg, #ffffff, #f3faff);
+  border: 1px solid var(--line);
+  border-radius: 0.95rem;
+  padding: 1.2rem;
+  transition: border-color 230ms ease, transform 230ms ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.cert-card:hover {
+  border-color: #b8dcf2;
+  transform: translateY(-5px);
+}
+
+.cert-card h3 {
+  font-size: 1.14rem;
+  line-height: 1.4;
+  color: #1b4f74;
+}
+
+.cert-card span {
+  display: inline-block;
+  margin-top: 0.35rem;
+  color: #2b7da8;
+  font-size: 0.94rem;
+  font-weight: 500;
+}
+
+.cert-card p {
+  color: var(--text-muted);
+  margin-top: 0.6rem;
+  font-size: 0.94rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 930px) {
+  .cert-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 620px) {
+  .cert-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .cert-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.2rem;
+  }
+}
+
+[data-theme='dark'] .cert-card {
+  background: var(--bg-surface);
+  border-color: var(--line);
+}
+[data-theme='dark'] .cert-card:hover {
+  border-color: var(--accent-2);
+}
+[data-theme='dark'] .cert-card h3 {
+  color: var(--accent-3);
+}
+[data-theme='dark'] .cert-card span {
+  color: var(--accent-2);
+}
+[data-theme='dark'] .cert-card p {
+  color: var(--text-muted);
+}
