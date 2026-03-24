@@ -3,10 +3,10 @@ import './ThemeToggle.css';
 
 function ThemeToggle() {
   const [isDark, setIsDark] = useState(() => {
-    // Check local storage or system preference
+    // Check local storage, default to light theme
     const saved = localStorage.getItem('theme');
     if (saved) return saved === 'dark';
-    return window.matchMedia('(prefers-color-scheme: dark)').matches;
+    return false; // Default to light theme
   });
 
   useEffect(() => {
